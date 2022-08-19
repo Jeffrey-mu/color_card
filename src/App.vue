@@ -2,6 +2,9 @@
   <div class="app">
     <div class="header">
       Welcome to the color card and see if there is any color you like.
+      <a href="https://github.com/Jeffrey-mu/color_card" target="blank"
+        ><img src="./assets/github.png" alt=""
+      /></a>
     </div>
     <div class="content">
       <ColorCard
@@ -51,17 +54,33 @@ const colorList = computed(() => {
 });
 </script>
 <style scoped>
-.input {
-  width: 150px;
-  background: none;
+img {
+  width: 20px;
+  height: 20px;
+  margin: 20px 20px;
+  cursor: pointer;
+}
+a {
+  display: inline-block;
+  height: 40px;
+}
+img:hover {
+  transform: scale(1.07);
+  border-radius: 50%;
+  box-shadow: 1px 1px 8px 0px #111;
 }
 .header {
+  justify-content: space-between;
+  padding: 0 10px;
   font-size: 22px;
+  font-weight: bold;
   text-align: center;
   color: rgb(170, 12, 165);
-  line-height: 50px;
+  line-height: 40px;
+  display: flex;
 }
 .app {
+  overflow: hidden;
   width: 100%;
   height: 100vh;
   background: conic-gradient(
@@ -77,7 +96,7 @@ const colorList = computed(() => {
 .content {
   overflow: auto;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 40px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
