@@ -1,6 +1,8 @@
 # colorCard
 
 This template should help get you started developing with Vue 3 in Vite.
+<img width="1417" alt="image" src="https://user-images.githubusercontent.com/66287770/185523425-a5e5254a-6e9d-4ad0-bf98-8e92fe4b47a2.png">
+
 
 ## Recommended IDE Setup
 
