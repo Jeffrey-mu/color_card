@@ -47,7 +47,7 @@ const count = ref(100);
 const colorList = computed(() => {
   return new Array(+count.value)
     .fill(new Array(2).fill(null))
-    .map((el) => el.map((el) => (el = getColor())));
+    .map((el) => el.map((el: string) => (el = getColor())));
 });
 </script>
 <style scoped>
