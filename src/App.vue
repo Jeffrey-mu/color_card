@@ -14,7 +14,7 @@
   </div>
 </template>
 
-<script setup name="IndexPage">
+<script setup name="IndexPage" lang="ts">
 import { computed, ref } from "vue";
 import ColorCard from "./components/ColorCard.vue";
 function getColor() {
